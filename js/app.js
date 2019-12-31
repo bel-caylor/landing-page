@@ -25,7 +25,16 @@ let activeClass = "section1";
  * Start Helper Functions
  *
 */
-
+function sectionInVeiwport() {
+  sections.forEach(function(sections) {
+    let position = sections.getBoundingClientRect();
+    let topHalf = 0.4 * window.innerHeight;
+    //check if section is above 50% of screen innerHeight
+    if(position.top >= 0 && position.top < topHalf) {
+      changeActive(sections.id);
+      return;
+    }
+  })};
 
 /**
  * End Helper Functions
@@ -66,3 +75,5 @@ function changeActive(newSection) {
 navBar.insertAdjacentHTML('afterbegin', htmlTextToAdd());
 //Listen for click on navigation bar and change active class.
 navBar.addEventListener('click', function () {changeActive(event.target.dataset.id)});
+//Listen for scroll event that puts a new Section in the viewport
+window.addEventListener('scroll', function() {sectionInVeiwport()});
