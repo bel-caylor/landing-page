@@ -26,13 +26,13 @@ body {
 /* Typeography General*/
 h1 {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     margin: 2em 1rem;
 }
 
 @media only screen and (min-width: 35em){
     h1 {
-        font-size: 7em;
+        font-size: 2.5em;
         margin: 2em 4rem 1em;
     }
 }
@@ -40,7 +40,7 @@ h1 {
 h2 {
     border-bottom: 1px solid #cc1;
     font-family: 'Oxygen', Sans-Serif;
-    font-size: 3em;
+    font-size: 1.5em;
     color: #fff;
 }
 
@@ -55,8 +55,8 @@ main {
 }
 
 .main-hero {
-    min-height: 40vh;
-    padding-top: 3em;
+    /* min-height: 40vh; */
+    /* padding-top: 3em; */
 }
 
 section {
@@ -75,12 +75,12 @@ section {
 }
 
 .navbar__menu li {
-    display: inline;
+    /* display: inline-block; */
     padding-right: 15px;
 }
 
 .navbar__menu .menu__link {
-    display: block;
+    display: inline-block;
     padding: 1em;
     font-weight: bold;
     text-decoration: none;
@@ -125,7 +125,7 @@ section {
 @media only screen and (min-width: 35em){
     .landing__container {
         max-width: 50em;
-        padding: 4em;
+        padding: 2em;
     }
 }
 
