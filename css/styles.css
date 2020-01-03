@@ -55,13 +55,11 @@ main {
 }
 
 .main-hero {
-    /* min-height: 40vh; */
-    /* padding-top: 3em; */
+    padding-top: 3em;
 }
 
 section {
     position: relative;
-    min-height: 80vh;
 }
 
 
@@ -75,7 +73,6 @@ section {
 }
 
 .navbar__menu li {
-    /* display: inline-block; */
     padding-right: 15px;
 }
 
@@ -120,7 +117,6 @@ section {
 .landing__container {
     padding: 1em;
     text-align: left;
-    max-height: 20px;
 }
 
 @media only screen and (min-width: 35em){
