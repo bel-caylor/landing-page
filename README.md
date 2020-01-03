@@ -2,12 +2,21 @@
 
 ## Table of Contents
 
-* [Instructions](#instructions)
+* [Description](#Description)
+* [Navigation](#Navigation)
+* [changeActive](#changeActive)
 
-## Instructions
+## Description
 
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
+This is Belinda Caylor submission for Udacity's Front End Developer Project #2.
 
-To get started, open `js/app.js` and start building out the app's functionality
+## Navigation
 
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+The navbar__list is created with the javascript function createNavBar in app.js.
+
+## changeActive
+
+The changeActive function in app.js removes the your-active-class from the
+previous section and adds it to the current section in the viewport.
+This function is called when a navbar section is clicked or when the user
+scrolls down the page.
