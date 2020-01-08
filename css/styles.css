@@ -67,7 +67,7 @@ section {
 
 /* Navigation Styles*/
 .navbar__active {
-  color: darkorange;
+  background-color: darkorange;
 }
 
 .navbar__menu ul {

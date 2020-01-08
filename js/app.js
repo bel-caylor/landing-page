@@ -46,20 +46,27 @@ function sectionInVeiwport() {
 function createNavBar() {
   let navList = ""
   sections.forEach(function(sections) {
+  let sectionNumber = sections.id.substring(7);
   navList += "<a href=\"\#" + sections.id + "\">";
-  navList += "<li class=\"menu__link\" data-id=\"" + sections.id + "\">";
+  navList += "<li id=\"S" + sectionNumber + "\" class=\"menu__link\" data-id=\"" + sections.id + "\">";
   navList += sections.dataset.nav + "</li></a>";});
   return navList;
 }
 
 
-
 // Add class 'active' to section when near top of viewport
 function changeActive(newSection) {
+  //Remove active class from old Sections
   let removeClass = document.getElementById(activeClass);
   removeClass.classList.remove("your-active-class");
+  let removeClassNav = document.getElementById("S" + activeClass.substring(7));
+  removeClassNav.classList.remove("navbar__active");
+
+  //Add active class to new sections
   let addClass = document.getElementById(newSection);
   addClass.classList.add("your-active-class");
+  let addClassNav = document.getElementById("S" + newSection.substring(7));
+  addClassNav.classList.add("navbar__active");
   activeClass = newSection;
 }
 
